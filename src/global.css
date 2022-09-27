@@ -1,0 +1,36 @@
+@tailwind base;
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  h4 {
+    @apply text-base;
+  }
+  h5 {
+    @apply text-sm;
+  }
+  h6 {
+    @apply text-xs;
+  }
+  h1,h2,h3,h4,h5,h6{
+    @apply font-semibold;
+  }
+  blockquote{
+    @apply  border-blue-200 border-l-2 p-3 text-blue-200;
+  }
+  pre{
+    @apply bg-gray-100 p-2 rounded dark:bg-gray-800;
+  }
+  a{
+    @apply underline text-blue-600 inline
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
