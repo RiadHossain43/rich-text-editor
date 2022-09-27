@@ -18,19 +18,23 @@
   h6 {
     @apply text-xs;
   }
-  h1,h2,h3,h4,h5,h6{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-semibold;
   }
-  blockquote{
-    @apply  border-blue-200 border-l-2 p-3 text-blue-200;
+  blockquote {
+    @apply border-blue-200 border-l-2 p-3 text-blue-200;
   }
-  pre{
+  pre {
     @apply bg-gray-100 p-2 rounded dark:bg-gray-800;
   }
-  a{
-    @apply underline text-blue-600 inline
+  a {
+    @apply underline text-blue-600 inline;
   }
 }
 @tailwind components;
 @tailwind utilities;
-
