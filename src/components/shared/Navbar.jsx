@@ -1,5 +1,4 @@
-import React from "react";
-export const Navbar = ({ darkTheme, setDarkTheme }) => {
+export default function Navbar({ darkTheme, setDarkTheme }) {
   return (
     <div className="sticky top-0 z-50 bg-white dark:bg-gray-900 dark:text-gray-200 p-5 flex flex-wrap sm:justify-between justify-center items-center border-b dark:border-gray-700 border-gray-200">
       <div className="flex justify-between items-center space-x-5 w-screen">
@@ -16,4 +15,4 @@ export const Navbar = ({ darkTheme, setDarkTheme }) => {
       </div>
     </div>
   );
-};
+}

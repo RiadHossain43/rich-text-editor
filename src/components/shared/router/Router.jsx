@@ -1,8 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import TextEditor from "components/editor/Index";
-
-export const Router = () => {
+export default function Router() {
   return (
     <div className="p-4">
       <Routes>
@@ -11,4 +10,4 @@ export const Router = () => {
       </Routes>
     </div>
   );
-};
+}

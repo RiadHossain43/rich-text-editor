@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Navbar } from "./components/shared/Navbar";
-import { Footer } from "./components/shared/Footer";
-import { Router } from "./components/shared/Router";
+import Navbar from "./components/shared/Navbar";
+import Footer from "./components/shared/Footer";
+import Router from "./components/shared/router/Router";
 const App = () => {
   const [darkTheme, setDarkTheme] = useState(false);
   return (
