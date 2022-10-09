@@ -14,6 +14,7 @@ export default function TextEditor({ readOnly = false, ...props }) {
   return (
     <>
       <Editor
+      
         blockRendererFn={editorMediaBlockRenderer}
         placeholder={props.placeholder}
         onChange={handleEditorStateChange}
