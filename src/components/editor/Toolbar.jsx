@@ -2,10 +2,13 @@ import React from "react";
 import { TextEditorContext } from "./Context";
 import toolTypes from "./toolTypes";
 import ButtonSeparator from "./ButtonSeparator";
+import FilePicker from "./FilePicker";
 export default function ToolBar(props) {
-  const { activeTools, handleToolClick } = React.useContext(TextEditorContext);
+  const { getFileInputProps, handleToolClick } =
+    React.useContext(TextEditorContext);
   return (
     <>
+      <FilePicker {...getFileInputProps()} />
       {Object.keys(toolTypes).map((type, index) => {
         return (
           <React.Fragment key={type}>
