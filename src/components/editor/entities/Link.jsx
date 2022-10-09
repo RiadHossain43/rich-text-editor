@@ -1,5 +1,5 @@
 export default function Link(props) {
-  if (!!props.href) {
+  if (props.href) {
     return (
       <a
         href={props.href}
@@ -7,7 +7,7 @@ export default function Link(props) {
         target="_blank"
         rel="noreferrer"
       >
-        {props.linkText}
+        {props.linkText || props.href}
       </a>
     );
   }
