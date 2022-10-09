@@ -1,4 +1,5 @@
 import { ELEMENT_TYPES } from "./elementTypes";
+import { ENTITY_NAME } from "./entities/entityNames";
 
 export const INLINE_TYPES = [
   {
@@ -57,61 +58,61 @@ export const BLOCK_TYPES = [
     icon: "fa-solid fa-code",
     element: ELEMENT_TYPES.BLOCK_DEFAULT,
   },
-  {
-    lebel: "Align left",
-    style: "editor-alignment-left",
-    icon: "fa-solid fa-align-left",
-    element: ELEMENT_TYPES.BLOCK_DEFAULT,
-  },
-  {
-    lebel: "Align center",
-    style: "editor-alignment-center",
-    icon: "fa-solid fa-align-center",
-    element: ELEMENT_TYPES.BLOCK_DEFAULT,
-  },
-  {
-    lebel: "Align right",
-    style: "editor-alignment-right",
-    icon: "fa-solid fa-align-right",
-    element: ELEMENT_TYPES.BLOCK_DEFAULT,
-  },
-  {
-    lebel: "Align justify",
-    style: "editor-alignment-justify",
-    icon: "fa-solid fa-align-justify",
-    element: ELEMENT_TYPES.BLOCK_DEFAULT,
-  },
+  // {
+  //   lebel: "Align left",
+  //   style: "editor-alignment-left",
+  //   icon: "fa-solid fa-align-left",
+  //   element: ELEMENT_TYPES.BLOCK_DEFAULT,
+  // },
+  // {
+  //   lebel: "Align center",
+  //   style: "editor-alignment-center",
+  //   icon: "fa-solid fa-align-center",
+  //   element: ELEMENT_TYPES.BLOCK_DEFAULT,
+  // },
+  // {
+  //   lebel: "Align right",
+  //   style: "editor-alignment-right",
+  //   icon: "fa-solid fa-align-right",
+  //   element: ELEMENT_TYPES.BLOCK_DEFAULT,
+  // },
+  // {
+  //   lebel: "Align justify",
+  //   style: "editor-alignment-justify",
+  //   icon: "fa-solid fa-align-justify",
+  //   element: ELEMENT_TYPES.BLOCK_DEFAULT,
+  // },
 ];
 export const ENTITY_TYPES = [
   {
     label: "Link",
-    style: "link",
+    style: ENTITY_NAME.LINK,
     icon: "fa-solid fa-link",
-    element: ELEMENT_TYPES.BLOCK_ENTITY,
+    element: ELEMENT_TYPES.ATOMIC_ENTITY,
   },
   {
     label: "Image",
-    style: "image",
+    style: ENTITY_NAME.IMAGE,
     icon: "fa-solid fa-images",
-    element: ELEMENT_TYPES.BLOCK_ENTITY,
+    element: ELEMENT_TYPES.ATOMIC_ENTITY,
   },
+  // {
+  //   label: "Mention",
+  //   style: ENTITY_NAME.MENTION,
+  //   icon: "fa-solid fa-at",
+  //   element: ELEMENT_TYPES.ATOMIC_ENTITY,
+  // },
+  // {
+  //   lable: "CL",
+  //   style: ENTITY_NAME.CHECKLIST,
+  //   icon: "fa-solid fa-list-check",
+  //   element: ELEMENT_TYPES.ATOMIC_ENTITY,
+  // },
   {
-    label: "Mention",
-    style: "mention",
-    icon: "fa-solid fa-at",
-    element: ELEMENT_TYPES.BLOCK_ENTITY,
-  },
-  {
-    lable: "CL",
-    style: "check-list-item",
-    icon: "fa-solid fa-list-check",
-    element: ELEMENT_TYPES.BLOCK_ENTITY,
-  },
-  {
-    label: "Dvivider",
-    style: "divider",
+    label: "Divider",
+    style: ENTITY_NAME.DIVIDER,
     icon: "fa-solid fa-minus",
-    element: ELEMENT_TYPES.BLOCK_ENTITY,
+    element: ELEMENT_TYPES.ATOMIC_ENTITY,
   },
 ];
 const toolType = {

@@ -10,7 +10,7 @@ export default function Index(props) {
           <ToolBar />
         </div>
         <div className="border-b dark:border-gray-700  mb-5 p-5">
-          <TextEditor />
+          <TextEditor placeholder="Lets create something amzing today..." />
         </div>
       </div>
     </TextEditorContextProvider>
